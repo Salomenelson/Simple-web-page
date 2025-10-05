@@ -3,14 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 img{
-    width: 500px;
+    max-width: 100%;
 }
 
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #f3f4f6;
-    color: #111827;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
 }
 
 a{
@@ -21,21 +21,61 @@ a{
 header{
     background-color: #003366;
     color: white;
-    padding: 20px;
+    padding: 10px 0;
 
 }
 
-.logo-img{
-    width: 60px;
+.container{
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+nav{
+    position: relative;
+}
+
+.nav-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.menuBar{
+    font-size: 22px;
 }
 
 .navbar{
     list-style: none;
+    position: absolute;
+    width: 90%;
+    padding: 20px 20px;
+    top: 50px;
+    visibility: hidden;
+    transition: all ease-in-out 0.7s;
+    z-index: 1000;
+    text-transform: uppercase;
+    background-color: #003366;
+}
+
+
+
+.menu_active{
+    visibility: visible;
+}
+
+
+.logo-img{
+    width: 50px;
+}
+
+.navbar li{
+    padding: 20px 0;
 }
 
 .hero{
     height: 70vh;
-    background-image: url("/img/eric-sharp-JdzHrfX4l4Q-unsplash.jpg");
+    background-image: url("/img/Exterior.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -44,12 +84,11 @@ header{
 
 .overlay{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    background: rgba(0, 0, 0, 0.5);
+    top: 20%;
+    background: rgba(0, 0, 0, 0.6);
     color: white;
     text-align: center;
-    padding: 20px 40px;
+    padding: 10px 30px;
 }
 
 
@@ -59,44 +98,106 @@ h2{
 }
 
 .about-section{
-    padding: 20px;
+    padding: 30px 0;
+    background-color:#fff;
+}
+
+.about-box{
+    width: auto;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f7f8fa;
+    border: 1px solid #cfd8e3;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
 }
 
 h3{
     font-size: 25px;
     padding-top: 12px;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
     text-align: center;
+    color: #002d62
+
 }
 
 h4{
     font-size: 20px;
-    padding-top: 12px;
+    padding-top: 15px;
     padding-bottom: 10px;
+    color: #003366;
+
 }
 
 h5{
     font-size: 15px;
+    color: #003366;
+
 }
 
 .academics-section{
-    padding: 20px;
+    padding: 30px 0;
+
 }
 
-.academic-section-division{
-    padding: 20px 0;
+.classes-division{
+    width: auto;
+    padding: 10px;
+    margin: 30px 0;
+    background-color: #f7f8fa;
+    border: 1px solid #cfd8e3;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.academic-section-division h5{
+.classes-division p{
     padding: 5px 0;
 }
 
-.admission-section{
-    padding: 20px;
+.academics-section img{
+    /* border-radius: 10px; */
+    clip-path: polygon(50% 0%, 65% 10%, 80% 5%, 90% 20%, 100% 35%, 90% 50%, 100% 65%, 90% 80%, 75% 95%, 60% 90%, 50% 100%, 40% 90%, 25% 95%, 10% 80%, 0% 65%, 10% 50%, 0% 35%, 10% 20%, 20% 5%, 35% 10%);
 }
 
-.admission-section-requirements{
-    padding: 20px 0;   
+.right{
+    padding-top: 10px;
+}
+
+.admission-section{
+    padding: 30px 0;
+}
+
+.application-text{
+    padding-top: 10px;
+}
+
+.requirement-list{
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+
+.form-quote{
+    font-style: italic;
+    text-align: center;
+    padding-top: 30px;
+    color: #003366;
+}
+
+form{
+    width: 80%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1) ;
+    margin: 20px auto;
+    padding: 20px;
+    border: 3px solid #ddd;
+    border-radius: 8px;
+}
+
+.form-heading{
+    padding: 10px 0;
+    color: #003366;
+    font-size: 20px;
 }
 
 
@@ -104,50 +205,116 @@ h5{
     padding: 10px 0;
 }
 
-label, .form-inputs>p{
-    padding-left: 5px;
-    padding-bottom: 5px;
+.gender{
+    padding-right: 15px;
+}
+
+label{
+    display: block;
 }
 
 input[type=text], [type=tel], select, [type=date]{
-    width: 25%;
+    width: 100%;
     padding: 8px;
-    margin: 5px;
+    margin: 5px 0;
     border-radius: 5px;
     border: 1px solid #ccc;
     font-size: 15px;
 }
 
 input[type=submit]{
-    padding: 10px 22px;
+    padding: 13px 30px;
     border-radius: 5px;
     background-color: #003366;
-    color: white;
+    color: #fff;
     border: none;
-    font-size: 14px;
+    font-size: 15px;
+}
+
+.submit{
+    display: flex;
+    justify-content: center;
 }
 
 .gallery-section{
-    padding: 20px;
+    padding: 20px 0;
 }
 
-
-.gallery-section>p{
+.gallery-section p{
     text-align: center;
-    padding-bottom: 20px;
 }
 
-.gallery-section-img{
-    padding: 10px;
+.gallery-layout-container{
+    padding: 30px 0;
+    columns: 3 200px;
+    column-gap: 1em;
+}
+
+.gallery-section img{
+    display: block;
+    margin-bottom: 1em;
+    border-radius: 10px;
 }
 
 .contact-section{
-    padding: 20px;
+    padding: 20px 0;
 }
 
 footer{
     background-color: #003366;
     color: white;
-    padding: 20px;
     text-align: center;
+    padding: 20px 0;
 }
+
+@media screen and (min-width:600px) {
+
+    .menuBar{
+        display: none;
+    }
+
+    nav{
+    position: static;
+}
+
+    .navbar{
+        list-style: none;
+        position: static;
+        visibility: visible;
+        width: auto;
+        padding: 0;
+        top: auto;
+        right: auto;
+        transition: none;
+        z-index: auto;
+        text-transform: uppercase;
+        display: flex;
+        gap: 20px;
+    }
+
+    
+    .menu_active{
+        right: auto;
+    }
+
+    .classes-division{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .left{
+        width: 45%;
+    }
+
+    .right{
+        width: 45%;
+        padding-top: 0;
+    }
+
+    .about-flex{
+        display: flex;
+        gap: 20px;
+    }
+    
+}
+

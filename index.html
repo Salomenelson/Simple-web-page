@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <title>Nile's International School</title>
 </head>
@@ -10,242 +11,282 @@
     <header>
         <!-- Navigation -->
         <nav class="navigation">
-            <div class="logo">
-                <img class="logo-img" src="/img/logo.png" alt="">
-                <!-- <h1>Nile's <span>International school</span></h1> -->
+            <div class="container">
+                <div class="nav-flex">
+                    <div class="logo">
+                        <img class="logo-img" src="/img/logo.png" alt="">
+                    </div>
+                    <div class="menuBar">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <ul class="navbar">
+                        <li><a href="/#Hero">Home</a></li>
+                        <li><a href="/#About">About</a></li>
+                        <li><a href="/#Academics">Academics</a></li>
+                        <li><a href="/#Admission">Admission</a></li>
+                        <li><a href="/#Gallery">Gallery</a></li>
+                        <li><a href="/#Contact">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-            <ul class="navbar">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Academics</a></li>
-                <li><a href="#">Admission</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
         </nav>
     </header>
     <main>
         <!-- Home Section -->
-        <section>
-            <div class="hero">
-                <!-- <img src="/img/eric-sharp-JdzHrfX4l4Q-unsplash.jpg" alt=""> -->
-                <div class="overlay">
-                    <h2>Welcome to Nile's International School</h2>
-                    <p>A place where learning is top notch and every child is encouraged to reach their full potential.</p>
-                    <p>We nuture young minds to grow with confidence, knowledge and values, shaping them into leaders of tomorrow.</p>
+        <section class="hero" id="Hero">
+            <div class="container">
+                <div>
+                    <div class="overlay">
+                        <h2>Welcome to Nile's <br> International School</h2>
+                        <p>A place where learning is top notch <br> and every child is encouraged to reach their full potential.</p>
+                        <p>We nuture young minds to grow with confidence, knowledge and values, <br> shaping them into leaders of tomorrow.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- About Section -->
-        <section>
-            <div class="about-section">
-                <h3>About Us</h3>
-                <!-- A brief story of our school -->
-                <p>Nile's International School was founded in 2023 out of a deep love for teaching and a passion for helping children grow into the best verssions of themselves. We started small, offering only daycare and after school program. Soon after, we expanded into Kindergarten, providing a strong foundation for early learning. As time went on and families entrusted us with their children, we grew into a full primary schoold, and now proudly offer education up to secondary level.  
-                </p>
-                <p>From these humble beginnings, Nile's International school has become a place where learning is top-notch, values are nutured and students are trained to succeed academically and in life. Today, we are recognized across Lagos as a school of excellence and growth.</p>
-    
-                <!-- Our mission -->
-                <h4>Our Misson</h4>
-                <p>To provide quality education that builds strong character, creativity and confidence.</p>
-    
-                <!-- Our vision -->
-                <h4>Our Vision</h4>
-                <p>To nuture leaders of tomorrow through a supportive and innovative learning environment.</p>
+        <section class="about-section" id="About">
+            <div class="container">
+                <div>
+                    <h3>About Us</h3>
+                    <!-- A brief story of our school -->
+                    <p>Nile's International School was founded in 2023 out of a deep love for teaching and a passion for helping children grow into the best versions of themselves. We started small, offering only daycare and after school program. Soon after, we expanded into Kindergarten, providing a strong foundation for early learning. As time went on and families entrusted us with their children, we grew into a full primary school, and now proudly offer education up to secondary level. </p>
+                    <p>From these humble beginnings, Nile's International school has become a place where learning is top-notch, values are nutured and students are trained to succeed academically and in life. Today, we are recognized across Lagos as a school of excellence and growth.</p>
+        
+                    <div class="about-flex">
+                        <!-- Our mission -->
+                        <div class="about-box">
+                            <h4>Our Misson</h4>
+                            <p>To provide quality education that builds strong character, creativity and confidence.</p>
+                        </div>
+            
+                        <!-- Our vision -->
+                        <div class="about-box">
+                            <h4>Our Vision</h4>
+                            <p>To nuture leaders of tomorrow through a supportive and innovative learning environment.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </section>
 
         <!-- Academics section -->
-        <section>
-            <div class="academics-section">
+        <section class="academics-section" id="Academics">
+            <div class="container">
                 <h3>Academics</h3>
-                <!-- Daycare -->
-                <div class="academic-section-division">
-                    <h4>Daycare</h4>
-                    <p>Our daycare provides a safe, caring and stimulating environment for young children. We focus on creating a home-like atmosphere where children feel comfortable, loved and secure while their parents are at work.</p>
-                    <div class="academic-section-division">
-                        <h5>Meet Our Daycare</h5>
-                        <img src="/img/Daycare.jpg" alt="Daycare image">
-                        <p>In our daycare, children enjoy supervised playtime, nap times and guided activities.</p>
+                <div class="classes">
+                    <!-- Daycare -->
+                    <div class="classes-division">
+                        <div class="left">
+                            <h4>Daycare</h4>
+                            <p>Our daycare provides a safe, caring and stimulating environment for young children. We focus on creating a home-like atmosphere where children feel comfortable, loved and secure while their parents are at work.</p>
+                            <p>In our daycare, children enjoy supervised playtime, nap times and guided activities.</p>
+                        </div>
+                        <div class="right">
+                            <img src="/img/Daycare.jpg" alt="Daycare image"/>
+                        </div>
                     </div>
-                </div>
-                <!-- Kindergarten -->
-                <div class="academic-section-division">
-                    <h4>Kindergarten</h4>
-                    <p>Our Kidergarten program provides warm and nuturing environment where children begin their educational journey. We help children build curiousity and love for learning from the very start.</p>
-                    <div class="academic-section-division">
-                        <h5>Meet Our kindergarten.</h5>
-                        <!-- Picture of the kidergarten kids -->
-                         <img src="/img/Kindergarten.jpg" alt="Kidergarten image">
-                        <p>In our kidergarten classes, children listen to stories, sing ryhmes, watch educational videos which entails learning the basics of alphabet, numbers, coloring.... in a playful and caring environment. </p>
+                    <!-- Kindergarten -->
+                    <div class="classes-division">
+                        <div class="left">
+                             <img src="/img/Kindergarten.jpg" alt="Kidergarten image">
+                        </div>
+                        <div class="right">
+                            <h4>Kindergarten</h4>
+                            <p>Our Kidergarten program provides warm and nuturing environment where children begin their educational journey. We help children build curiousity and love for learning from the very start.</p>
+                            <p>In our kidergarten classes, children listen to stories, sing ryhmes, watch educational videos which entails learning the basics of alphabet, numbers, coloring.... in a playful and caring environment. </p>
+                        </div>
                     </div>
-                </div>
-                <!-- Primary -->
-                <div class="academic-section-division">
-                    <h4>Primary</h4>
-                    <p>Our primary schools builds a strong academic foundation in English, mathematics and General studies. We also include creative arts and sports to ensure a balanced education that develops both knowledge and character. </p>
-
-                    <div class="academic-section-division">
-                        <h5>Meet Our Primary</h5>
-                        <img src="/img/Primary.jpg" alt="Primary image">
-                        <p>In our primary classes, pupils prcatice reading and writing, solving math problems, takin pasrts in simple science activities and enjoying teamwork through group projects and sports. </p>
-                    </div>
+                    <!-- Primary -->
+                    <div class="classes-division">
+                        <div class="left">
+                            <h4>Primary</h4>
+                            <p>Our primary schools builds a strong academic foundation in English, mathematics and General studies. We also include creative arts and sports to ensure a balanced education that develops both knowledge and character. </p>
+                            <p>In our primary classes, pupils prcatice reading and writing, solving math problems, takin pasrts in simple science activities and enjoying teamwork through group projects and sports. </p>
+                        </div>
     
-                </div>
-                <!-- Secondary -->
-                <div class="academic-section-division">
-                    <h4>Sceondary</h4>
-                    <p>At secondary level, we prepare students for higer education. Our curriculum emphasizes critical thinking, problem solving and leadership skills supported by well equiped laboratories, libraries and extracurricular ativities that shape well rounded individuals. </p>
-                    <div class="academic-section-division">
-                        <h5>Meet Our Secondary School</h5>
-                        <img src="/img/Secondary.jpg" alt="Secondary image">
-                        <p>Our secondary students participate in science experiments, technology workshops, sports competition, quizes, debate, and cultural events. We aim to equip not just with academic knowledge, but with confidence and skills to thrive in the world.</p>
+                        <div class="right">
+                            <img src="/img/Primary.jpg" alt="Primary image">
+                        </div>
+        
+                    </div>
+                    <!-- Secondary -->
+                    <div class="classes-division">
+                        <div class="left">
+                            <img  src="/img/Secondary.jpg" alt="Secondary image">
+                        </div>
+                        <div class="right">
+                            <h4>Sceondary</h4>
+                            <p>At secondary level, we prepare students for higer education. Our curriculum emphasizes critical thinking, problem solving and leadership skills supported by well equiped laboratories, libraries and extracurricular ativities that shape well rounded individuals. </p>
+                            <p>Our secondary students participate in science experiments, technology workshops, sports competition, quizes, debate, and cultural events. We aim to equip not just with academic knowledge, but with confidence and skills to thrive in the world.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         
         <!-- Admission Section -->
-        <section>
-            <div class="admission-section">
-                <h3>Admission</h3>
-                <p>We welcome students from diverse backgrounds. Our admission process is simple and diverse.</p>
-                <div class="admission-section-requirements">
-                    <h4>Requirements</h4>
-                        <ul>
-                            <li>Completed Application Form</li>
-                            <li>Birth Certificate</li>
-                            <li>Passport</li>
+        <section class="admission-section" id="Admission">
+            <div class="container">
+                <div>
+                    <h3>Admission</h3>
+                    <p>At Nile's, we believe that every child desrves a learning environment that nutures curiosity, builds confidence and encourages excellence.</p>
+                    <p>Our admission process is open to students who are ready to join a community of learners committed to academic achievement and personal growth.</p>
+                    <div class="admission-section-requirements">
+                        <h4>Admission Requirements</h4>
+                        <p>To complete your application, please ensure you provide the following:</p>
+                        <ul class="requirement-list">
+                            <li>A completed application form</li>
+                            <li>A copy of your birth Certificate</li>
+                            <li>Two recent passports</li>
                         </ul>
+                    </div>
+        
+                    <h4>How to apply</h4>
+                    <p>Application forms can be obtained directly from the school or filled online. Once you have completed the form, submit it with the required documents to the school's admission office. Our team will review your application and reach out to schedule an assessment.</p>
+                    <div class="application-text">
+                        <p>Ready to begin your journey with us?</p>
+                        <p>Please fill out the appliaction form below</p>
+                    </div>
+                    <div class="form-box">
+                    <p class="form-quote">Education is the foundation for a brighter future. Let's build it together</p>
+                        <form action="confirmation.html">
+                            <p class="form-heading">Student Information</p>
+                            <div class="form-inputs">
+                                <label for="child-name">Name</label>
+                                <input type="text" placeholder="First Name" required>
+                                <input type="text" placeholder="Last Name" required>
+                            </div>
+        
+                            <div class="form-inputs">
+                                <p>Gender</p>
+                                <label for="gender" required>
+                                    <dv class="gender">
+                                        <input type="radio" name="gender" id="radio"> 
+                                        Male
+                                    </dv>
+                                    <dv class="gender">
+                                        <input type="radio" name="gender" id="radio"> 
+                                        Female
+                                    </dv>
+                                </label>
+                            </div>
+        
+                            <div class="form-inputs">
+                                <label for="dob">Date of Birth</label>
+                                <input type="date" name="dob" id="dob" required>
+                            </div>
+                            
+                            <div class="form-inputs">
+                                <label for="class">Applying for</label>
+                                <select name="class" id="class" required>
+                                    <option value="">--Select an option</option>
+                                    <option value="daycare">Daycare</option>
+                                    <option value="kindergarten">Kindergarten</option>
+                                    <option value="primary">Primary</option>
+                                    <option value="secondary">Secondary</option>
+                                </select>
+                            </div>
+
+                            <div class="form-inputs">
+                                <label for="address">Address</label>
+                                <input type="text" placeholder="Street Address" required>
+                            </div>
+                            
+        
+                            <div class="form-inputs">
+                                <label for="state">State of Origin</label>
+                                <input type="text" placeholder="What state are you from?" required>
+                            </div>
+                            
+                            <p class="form-heading">Parent/Guardian Information</p>
+                            <div class="form-inputs">
+                                <label for="parent-name">Name</label>
+                                <input type="text" placeholder="First Name" required>
+                                <input type="text" placeholder="Last Name" required>
+                            </div>
+                            
+                            <div class="form-inputs">
+                                <label for="phone-no">Phone</label>
+                                <input type="tel" name="phone-no" id="phone-no" placeholder="Phone number" required>
+                            </div>
+                            
+        
+                            <div class="form-inputs">
+                                <label for="address">Address</label>
+                                <input type="text" placeholder="Street Address" required>
+                            </div>
+                            
+        
+                            <div class="form-inputs">
+                                <label for="state">State of Origin</label>
+                                <input type="text" placeholder="What state are you from?" required>
+                            </div>
+    
+                            <div class="submit">
+                                <input type="submit" value="Submit">
+                            </div>
+                        </form>
+                    </div>
                 </div>
-    
-                <h4>Apply Now</h4>
-                <form action="confirmation.html">
-                    <div class="form-inputs">
-                        <label for="child-name"> Child's Name</label> <br>
-                        <input type="text" placeholder="First Name" required>
-                        <input type="text" placeholder="Last Name" required>
-                    </div>
-
-                    <div class="form-inputs">
-                        <p>Gender</p>
-                        <label for="gender" required>
-                            <input type="radio" name="gender" id="radio">Male
-                            <input type="radio" name="gender" id="radio">Female
-                        </label>
-                    </div>
-
-                    <div class="form-inputs">
-                        <label for="dob">Date of Birth</label> <br>
-                        <input type="date" name="dob" id="dob" required>
-                    </div>
-                    
-                    <div class="form-inputs">
-                        <label for="class">Applying for</label> <br>
-                        <select name="class" id="class" required>
-                            <option value="">--Select an option</option>
-                            <option value="daycare">Daycare</option>
-                            <option value="kindergarten">Kindergarten</option>
-                            <option value="primary">Primary</option>
-                            <option value="secondary">Secondary</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-inputs">
-                        <label for="parent-name">Parent/Guardian Name</label> <br>
-                        <input type="text" placeholder="First Name" required>
-                        <input type="text" placeholder="Last Name" required>
-                    </div>
-                    
-                    <div class="form-inputs">
-                        <label for="phone-no">Phone</label> <br>
-                        <input type="tel" name="phone-no" id="phone-no" placeholder="Phone number" required>
-                    </div>
-                    
-
-                    <div class="form-inputs">
-                        <label for="address">Address</label> <br>
-                        <input type="text" placeholder="Street Address" required>
-                    </div>
-                    
-
-                    <div class="form-inputs">
-                        <label for="state">State of Origin</label><br>
-                        <input type="text" placeholder="What state are you from?" required>
-                    </div>
-    
-                    <input type="submit" value="Submit">
-                </form>
             </div>
         </section>
 
         <!-- Our gallery section -->
-        <section>
-            <div class="gallery-section">
-                <h3>Gallery</h3>
-                <p>Explore the beauty of our school.</p>
-                <div class="gallery-section-img">
-                    <img src="/img/Library.jpg" alt="Library">
-                    <p>Library</p>
-                </div>
-
-                <div class="gallery-section-img">
-                    <img src="/img/Science Lab.jpg" alt="Science lab">
-                    <p>Science Lab</p>
-                </div>
-
-                <div class="gallery-section-img">
-                    <img src="/img/Computer Lab.jpg" alt="Computer lab">
-                    <p>Computer Lab</p>
-                </div>
-
-                <div class="gallery-section-img">
-                    <img src="/img/Classroom.jpg" alt="Classroom">
-                    <p>Classroom</p>
-                </div>
-
-                <div class="gallery-section-img">
-                    <img src="/img/Basketball court.jpg" alt="Basketball court">
-                    <p>Basketball Court</p>
-                </div>
-
-                <div class="gallery-section-img">
-                    <img src="/img/Hallway.jpg" alt="Hallway">
-                    <p>Hallway</p>
-                </div>
-
-                <div class="gallery-section-img">
-                    <img src="/img/Hall.jpg" alt="Hall">
-                    <p>Lecture Hall</p>
-                </div>
-
-                <div class="gallery-section-img">
-                    <img src="/img/Playground.jpg" alt="Playground">
-                    <p>Playground</p>
-                </div>
-
-                <div class="gallery-section-img">
-                    <img src="/img/Football field.jpg" alt="Football field">
-                    <p>Football field</p>
+        <section class="gallery-section" id="Gallery">
+            <div class="container">
+                <div>
+                    <h3>Gallery</h3>
+                    <p>Explore the beauty of our school.</p>
+                    <div class="gallery-layout-container">
+                        <img src="/img/Hallway.jpg" alt="Hallway">
+                        <img src="/img/Classroom.jpg" alt="Classroom">
+                        <img src="/img/Computer Lab.jpg" alt="Computer lab">
+                        <img src="/img/Science Lab.jpg" alt="Science lab">
+                        <img src="/img/Library.jpg" alt="Library">
+                        <img src="/img/Basketball court.jpg" alt="Basketball court">
+                        <img src="/img/Football field.jpg" alt="Football field">
+                        <img src="/img/Art room.jpg" alt="Art room">
+                        <img src="/img/Hall.jpg" alt="Hall">
+                        <img src="/img/Cafeteria.jpg" alt="Cafeteria">
+                        <img src="/img/Playground.jpg" alt="Playground">
+                        <img src="/img/Music room.jpg" alt="Music room">
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Contact section -->
-        <section>
-            <div class="contact-section">
-                <h3>Contact Us</h3>
-                <p>We would love to hear from you. Reach our with any questions.</p>
-                <p>Email: NileInternatinal@gmail.com</p>
-                <p>Phone number: 08010000586</p>
-                <p>Address: 123 Jones Estate, lagos State.</p>
+        <section class="contact-section" id="Contact">
+            <div class="container">
+                <div>
+                    <h3>Contact Us</h3>
+                    <p>We would love to hear from you. Reach our with any questions.</p>
+                    <p>Email: NileInternatinal@gmail.com</p>
+                    <p>Phone number: 08010000586</p>
+                    <p>Address: 123 Jones Estate, lagos State.</p>
+                </div>
             </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 Nile's Internation School. All Rights Reserved.</p>
+        <div class="container">
+            <p>&copy; 2025 Nile's International School. All Rights Reserved.</p>
+        </div>
     </footer>
+
+
+    <script>
+      const menuBar = document.querySelector(".menuBar");
+      const menuIcon = document.querySelector(".fa-bars");
+      const navbar = document.querySelector(".navbar");
+
+      menuBar.addEventListener("click", () => {
+        menuIcon.classList.toggle("fa-xmark");
+        navbar.classList.toggle("menu_active");
+      });
+    </script>
 </body>
 </html>

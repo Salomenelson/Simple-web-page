@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,8 +21,14 @@ a{
 header{
     background-color: #003366;
     color: white;
-    padding: 20px;
+    width: 100%;
 
+}
+
+.container{
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .logo-img{
@@ -58,9 +64,6 @@ h2{
     font-size: 30px;
 }
 
-.about-section{
-    padding: 20px;
-}
 
 h3{
     font-size: 25px;
@@ -79,20 +82,12 @@ h5{
     font-size: 15px;
 }
 
-.academics-section{
-    padding: 20px;
-}
-
 .academic-section-division{
     padding: 20px 0;
 }
 
 .academic-section-division h5{
     padding: 5px 0;
-}
-
-.admission-section{
-    padding: 20px;
 }
 
 .admission-section-requirements{
@@ -127,10 +122,6 @@ input[type=submit]{
     font-size: 14px;
 }
 
-.gallery-section{
-    padding: 20px;
-}
-
 
 .gallery-section>p{
     text-align: center;
@@ -141,13 +132,10 @@ input[type=submit]{
     padding: 10px;
 }
 
-.contact-section{
-    padding: 20px;
-}
+
 
 footer{
     background-color: #003366;
     color: white;
-    padding: 20px;
     text-align: center;
-}
+} */
